@@ -1,0 +1,123 @@
+body{
+    background-color: #0D0D0D;
+    color: #f9f6f6;
+}
+
+/* navbar  */
+.side-nav-menu{
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    /* left: -272.562px; */
+    z-index: 99;
+}
+.side-nav-menu .nav-tab{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 32px;
+  background-color: #0D0D0D;
+}
+.side-nav-menu .nav-tab .nav-links ul{
+    list-style-type: none;
+    overflow: hidden;
+
+}
+.side-nav-menu .nav-tab .nav-links ul li {
+    padding: 10px 0 ;
+    position: relative;
+    cursor: pointer;
+}
+.side-nav-menu .nav-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #f9f6f6;
+    color: #0D0D0D;
+}
+.side-nav-menu .nav-tab .nav-footer .footer-icon i {
+  padding: 0 5px;
+  cursor: pointer;
+}
+.side-nav-menu .nav-header img{
+    width: 50px;
+  
+}
+.side-nav-menu .nav-header i{
+    cursor: pointer;
+    font-size: 20px;
+}
+.side-nav-menu .nav-header .nav-header-icons i {
+    display: block;
+    padding: 5px 0;
+    cursor: pointer;
+}
+/* First Page */
+.container .row .col-md-3 .meal{
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.container .row .col-md-3 .meal .meal-layer{
+    background-color: #f9f6f672;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    transform: translateY(250px);
+    opacity: 0;
+    transition: all 0.7s;
+}
+.container .row .col-md-3 .meal .meal-layer h3{
+    color: #0D0D0D;
+}
+.container .row .col-md-3 .meal:hover .meal-layer{
+opacity: 1;
+transform: translateY(0px);
+}
+/* Search Page */
+.container .row .col-md-6 input {
+    border: none;
+    border-bottom: 1px solid #f9f6f6 ;
+    background-color: #000;
+    color: #f9f6f6;
+}
+/* Contact section */
+.contactSec {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* meals instructions */
+.container .col-md-8 .firstUl {
+    list-style-type: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .col-md-8 .secondUl{
+    list-style-type: none;
+}
+.container .col-md-8 .secondUl li{
+    width: fit-content;
+}
+
+.container .col-md-8 div{
+    display: flex;
+    align-items: center;
+}
+.container .col-md-8 div a{
+    margin: 5px;
+}
+
